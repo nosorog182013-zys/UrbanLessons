@@ -1,3 +1,4 @@
+#Домашнее задание по теме "Зачем нужно наследование"
 class Animal:
   def __init__(self, name, alive, fed):
     self.name = name
