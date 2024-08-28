@@ -2,13 +2,13 @@
 class Animal:
   def __init__(self, name, alive, fed):
     self.name = name
-    self.alive = True
-    self.fed = False
+    self.alive = alive
+    self.fed = fed
 
 class Plant:
-  def __init__(self, name, adible):
+  def __init__(self, name, edible):
     self.name = name
-    self.adible = False
+    self.edible = edible
 
 class Mammal(Animal):
   def __init__(self, name):
