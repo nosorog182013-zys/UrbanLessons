@@ -1,3 +1,4 @@
+#Домашнее задание по теме "Доступ к свойствам родителя. Переопределение свойств."
 class Vehicle:
   def __init__(self, owner, model, engine_power, color):
     self.owner = owner
