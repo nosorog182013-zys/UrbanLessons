@@ -1,3 +1,4 @@
+#Домашнее задание по теме "Множественное наследование"
 class Horse:
   def __init__(self, x_distance, sound):
     self.x_distance = 0
