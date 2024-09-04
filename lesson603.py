@@ -15,11 +15,10 @@ class Eagle:
   def fly(self, dy):
     self.y_distance += dy
 
-class Pegasus(Eagle, Horse):
-  def __init__(self, x_distance=0, y_distance=0):
-    super().__init__(x_distance, y_distance)
-    self.x_distance = x_distance
-    self.y_distance = y_distance
+class Pegasus(Horse, Eagle):
+  def __init__(self):
+    Horse.__init__(self, 0, 'Frrr')
+    Eagle.__init__(self, 0, 'I train, eat, sleep, and repeat')
     
   def move(self, dx, dy):
     Horse.run(self, dx)
