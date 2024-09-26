@@ -1,4 +1,5 @@
- class Product:
+#Домашнее задание по теме "Режимы открытия файлов"
+class Product:
   def __init__(self, name, weight, category):
     self.name = name
     self.weight = weight
@@ -20,7 +21,7 @@ class Shop:
           name, weight, category = line.strip().split(',')
           products.append(Product(name, float(weight), category))
     except FileNotFoundError:
-      pass  # File doesn't exist, start with an empty list
+      pass
     return products
     
   def get_products(self):
@@ -29,7 +30,6 @@ class Shop:
       content = file.read()
       lines = content.splitlines()
       for line in lines:
-        # Assuming the file format is "name, weight, category"
         name, weight, category = line.split(',')
         product = f"{name}, {weight}, {category}\n"
         products_string += product
