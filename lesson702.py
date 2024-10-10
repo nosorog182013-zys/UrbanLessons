@@ -5,7 +5,7 @@ def custom_write(file_name, strings):
     for i, string in enumerate(strings):
       current_position = f.tell()
       f.write(string + "\n")
-      strings_positions[(i + 1, start_position + i)] = string
+      strings_positions[(i + 1, current_position + i)] = string
   return strings_positions
 
 strings = [
