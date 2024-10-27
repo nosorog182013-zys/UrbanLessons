@@ -1,3 +1,4 @@
+#Домашнее задание по теме "Оператор "with".
 class WordsFinder:
   def __init__(self, *file_names: str):
     self.file_names = file_names
