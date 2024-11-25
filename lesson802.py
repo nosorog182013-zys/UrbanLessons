@@ -1,3 +1,4 @@
+#Домашнее задание по теме "Сложные моменты и исключения в стеке вызовов функции"
 def personal_sum(numbers):
   result = 0
   incorrect_data = 0
