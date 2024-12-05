@@ -1,3 +1,4 @@
+#2023/11/29 00:00|Домашнее задание по теме "Введение в функциональное программирование"
 def apply_all_func(int_list, *functions):
   results = {}
   for function in functions:
