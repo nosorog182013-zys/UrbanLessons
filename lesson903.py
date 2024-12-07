@@ -1,7 +1,9 @@
-#https://itresume.ru/blog/python-7-zip-levels
+#2023/12/01 00:00|Домашнее задание по теме "Генераторные сборки"
 first = ['Strings', 'Student', 'Computers']
 second = ['Строка', 'Урбан', 'Компьютер']
+
 first_result = [(len(a) - len(b)) for a, b in zip(first, second) if len(a) != len(b)] 
 second_result = [(len(first[i]) == len(second[i])) for i in range(len(first))]
+
 print(list(first_result))
 print(list(second_result))
