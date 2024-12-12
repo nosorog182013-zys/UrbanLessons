@@ -1,5 +1,7 @@
+#2023/12/03 00:00|Домашнее задание по теме "Итераторы"
 class ValueError(Exception):
     pass
+
 class StepValueError(ValueError):
     pass
 
